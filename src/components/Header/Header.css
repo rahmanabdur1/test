@@ -1,0 +1,80 @@
+.header_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Add this to your CSS file */
+
+.header h1 {
+  color: #0D0500;
+  font-family: 'Inria Sans', 'Crete Round', sans-serif;
+  font-weight: bold;
+  margin-top: 27px;
+  margin-bottom: 70px;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Span styles */
+.header h1 span {
+  color: #9C9C9C;
+}
+
+
+.image-cover {
+  object-fit: cover;
+  border-radius: 32px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FF7621;
+  transition: all 0.3s ease-in-out;
+}
+
+.image-cover:hover{
+  object-fit: cover;
+  border-radius: 32px;
+  width: 34px;
+  height: 34px;
+  border: 2px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .header h1 {
+    text-align: center;
+    font-size: 23px;
+    transition: font-size 0.3s ease-in-out;
+    /* Transition effect for font-size */
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .header svg {
+    width: 90px;
+    /* Add units for width */
+    height: 30px;
+    /* Add units for height */
+    transition: width 0.5s ease-in-out, height 0.3s ease-in-out;
+    /* Transition effect for SVG */
+  }
+
+  .image-cover {
+    width: 30px;
+    height: 30px;
+  }
+
+}

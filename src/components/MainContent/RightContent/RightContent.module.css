@@ -1,0 +1,357 @@
+.rightContainer {
+  margin: 14px;
+}
+
+@media (max-width: 1050px) {
+  .rightContainer {
+    width: 60%;
+    margin: auto;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .rightContainer {
+    width: 90%;
+    margin: auto;
+  }
+}
+.surge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.surge span:nth-child(1) {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.surge span:nth-child(2) {
+  width: 13px;
+  height: 13px;
+  background-color: #21AAFF;
+  border-radius: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* dateRanges */
+.dateRange {
+  color: #9C9C9C;
+  font-size: 11.5px;
+}
+
+.dateRange span {
+  font-style: italic;
+}
+
+
+/* 
+date section */
+.date {
+  background-color: #7B7B7B;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 3px;
+  border-radius: 5px;
+  padding: 8px 0 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.date:hover {
+  background-color: black;
+}
+
+
+
+/* maxPrice */
+
+.maxPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #21AAFF;
+  border-radius: 5px;
+  padding: 10px 13px 10px 13px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.maxPrice span:nth-child(1) {
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+
+.maxPrice span:nth-child(2) {
+  background-color: #77FF47;
+  font-size: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 4px;
+}
+
+
+/* currentPriceSection */
+
+.currentPriceSection {
+  background-color: #0D0500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 13px 10px 13px;
+  cursor: pointer;
+}
+
+.currentPriceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.currentPriceInfo span:nth-child(1) {
+  color: #9C9C9C;
+  font-size: 12px;
+}
+
+.currentPriceInfo span:nth-child(2) {
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.currentPriceImg {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid #77FF47;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 05px 10px rgba(119, 255, 71, 0.5); /* Drop shadow effect */
+}
+
+
+.currentPriceImg:hover {
+  border: 2px solid #21AAFF;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* 
+othersPlacedBets */
+
+
+.othersPlacedBets{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0 10px 0;
+}
+
+.othersPlacedBets span{
+  color: #7B7B7B;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.currentPriceImg1{
+  z-index: -10;
+}
+
+.currentPriceImg2{
+  margin-left: -7px;
+  position: relative;
+  z-index: 10;
+  border-radius: 24px;
+  border: 1px solid #77FF47;
+}
+
+.currentPriceImg3{
+  margin-left: -7px;
+  position: relative;
+  z-index: 10;
+}
+
+
+/* bidSection */
+
+.bidSection {
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.bidSection span{
+  color: #9C9C9C;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.bid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+
+.cad {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cad span:nth-child(1) {
+  color: #0D0500;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cad span:nth-child(2) {
+  color: #9C9C9C;
+}
+
+
+
+/* summary_date */
+
+.summary{
+  margin-top: 15px;
+}
+
+.summary_text{
+  color: #9C9C9C;
+  font-size: 13.5px;
+}
+
+.summary_date {
+  border: 1px solid #D6D6D6;
+  border-radius: 5px;
+  padding: 10px 13px 10px 13px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.date_cad {
+  display: flex;
+  justify-content: space-between;
+}
+
+.all_day {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.all_day span:nth-child(1){
+  color: #0D0500;
+  font-weight: 600;
+  font-size: 13.5px;
+}
+
+.all_day span:nth-child(2){
+  color: #FF7621;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.position{
+  color: #0D0500;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.position span:nth-child(2){
+   background-color: #77FF47;
+   border-radius: 50%;
+   padding: 1px 6px 1px 6px;
+   font-weight: 600;
+   justify-content: center;
+   font-size: 12px;
+   height: min-content;
+}
+
+.peterborough {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.peterborough span:nth-child(1){
+  color: #0D0500;
+  font-weight: bold;
+}
+
+.peterborough span:nth-child(2){
+  color: #FF7621;
+  font-weight: bold;
+}
+
+
+
+
+
+/* 
+placebid */
+
+.placebid {
+  margin-top: 10px;
+}
+
+.placebid button {
+  background-color: #FF7621;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.placebid button:hover{
+  background-color: #154f74;
+}
+
+.placebid_text {
+  font-size: 12px;
+  color: #9C9C9C;
+  text-align: center;
+}
+
+.placebid_text span {
+  font-weight: bold;
+}
