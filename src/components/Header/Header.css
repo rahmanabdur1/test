@@ -3,7 +3,6 @@
   justify-content: space-between;
 }
 
-/* Add this to your CSS file */
 
 .header h1 {
   color: #0D0500;
@@ -18,15 +17,14 @@
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
-/* Span styles */
 .header h1 span {
   color: #9C9C9C;
 }
@@ -41,7 +39,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.image-cover:hover{
+.image-cover:hover {
   object-fit: cover;
   border-radius: 32px;
   width: 34px;
